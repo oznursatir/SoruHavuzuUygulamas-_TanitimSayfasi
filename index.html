@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Soru Havuzu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+  <body>
+    
+   <!-- Modals Start -->
+  <!-- kayıt modal-->
+  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="ModalLabel6" >Kayıt Ol</h5>
+          <button 
+          type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close">
+
+        </button>
+        </div>
+        <div class="modal-body ">
+          
+    <div class="contact-us section" id="kayit6" style="padding-top: 0px; margin-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="section-heading">
+              <h6>Erken Kayıt</h6>
+              <h2>Erken Kayıt Fırsatını Kaçırmayın</h2>
+              <p>
+                1 Ocak 2024 tarihine kadar kaydınızı %50 indirim ile yapabilir uygulamamızı
+                indirimli bir şekilde kullanabilirsiniz.
+              </p>
+              <div class="special-offer">
+                <div class="container-sm">
+                  <div class="row">
+                   <div class="col-sm-3"><span class="offer"><em>50%</em><br />İNDİRİM</span></div>
+                    <div class="col-sm-7"><h6>Son Tarih: <em>1 Ocak 2024</em></h6>
+                <h4>Özel Teklif <em>50%</em> İNDİRİM!</h4></div>
+                    <div class="col-sm-2" style="display: flex;"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-content">
+              <form id="kayit-form6" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input type="hidden" name="formtype" id="sign_form_type" value="contact">
+                    <fieldset>
+                      <input
+                        type="name"
+                        name="name"
+                        id="name6"
+                        placeholder="Adınız..."
+                        autocomplete="on"
+                        required
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input
+                        type="name"
+                        surname="surname"
+                        id="surname6"
+                        placeholder="Soyadınız..."
+                        autocomplete="on"
+                        required
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email6"
+                        pattern="[^ @]*@[^ @]*"
+                        placeholder="E-mail..."
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button
+                        type="submit"
+                        id="form-submit6"
+                        class="orange-button"
+                      >
+                       Kayıt Ol
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button 
+          type="button" 
+          class="btn btn-secondary" 
+          data-bs-dismiss="modal">KAPAT
+        </button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!--servisler 1-->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel1" >
+                  Soru Oluştur
+                </h5>
+                <button 
+                id="buton" type="button" 
+                class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close" >
+              </button>
+              </div>
+              <div class="modal-body px-5">
+                <img src="assets/images/modalicon1.png" alt="" style="max-width: 86px; display: block; margin: auto;" >
+                <br><br>
+                <p style="text-indent: 25px;">
+                  Uygulama içindeki soru havuzuna bağlı kalmadan kendi istediğiniz tarzda
+                  (çoktan seçmeli sorular,eşleştirme soruları, doğru-yanlış soruları,
+                  görsel içerikli sorular, ses dosyası içeren sorular vb.) ve dilediğiniz
+                  katagoride sorular oluşturabilirsiniz. Ayrıca hazırladığınız bu soruları arşivleyebilir
+                  daha sonraki testlerinizde tekrar kullanabilirsiniz.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  KAPAT
+                </button>
+              </div>
+            </div>
+          </div>
+  </div>
+  
+<!--servisler 2-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="exampleModalLabel2" >
+        Sınavlar
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/modalicon2.png" alt="" style="max-width: 86px; display: block; margin: auto;">
+      <br><br>
+      <p style="text-indent: 25px;">
+        Sınav ve soru havuzları içerisinden seçtiğiniz testlerle veya
+        havuz dışında özel soru hazırlayarak sınavlarınızı oluşturabilir ve bunları
+        havuza dahil edebilirsiniz. Sınav için özel giriş yetkisi oluşturabilir ve
+        süre kısıtlaması uygulayabilirsiniz. Çoklu katılımcı ile eş zamanlı cevaplandırma
+        yaparak yarışma formatlı sınavlar oluşturabilirsiniz, Mülakat tarzı sınavlar
+        (doğru ya da yanlış cevabı olmayan verilen cevaplara göre kişinin belirli niteliklerinin
+        puanlamasının yapıldığı sınavlar, anketler) oluşturarak iş hayatınızda kolaylık
+        sağlayabilirsiniz. Gerçekleştirilen sınavlar hakkında analiz raporlarına kolayca ulaşabilirsiniz.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+  </div>
+
+<!--servisler 3-->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="exampleModalLabel3">
+          Yarışmalar
+        </h5>
+        <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+          aria-label="Close" ></button>
+      </div>
+      <div class="modal-body px-5">
+        <img src="assets/images/modalicon3.png" alt="" style="max-width: 86px; display: block; margin: auto;">
+        <br><br>
+        <p style="text-indent: 25px;">
+          Gerek iş hayatında gerek özel hayatta başarılı olmanın yolu
+          rekabeti aktif tutmaktan geçer. Bir rekabet ortamı oluşturmak
+          için yapılan etkinlikler ve yarışmalar ise hem zamansal hem
+          mekansal hem de maddi bir külfet olabilir. ,Soru Havuzu uygulaması
+          bu anlamda oldukça idealdir. Çok kısa bir sürede hazırlayabileceğiniz,
+          ekstra bir mekana ihtiyaç duymadan internet erişimine sahip olunan her ortamda
+          uygulayabileceğiniz ve çok sayıda katılımcı ile eş zamanlı olarak
+          gerçekleştirebileceğiniz yarışmalar hazırlayabilirsiniz.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          KAPAT
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--servisler 4-->
+ <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+ aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title fs-5" id="exampleModalLabel4" >
+         Soru Havuzu
+       </h5>
+       <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+         aria-label="Close"></button>
+     </div>
+     <div class="modal-body px-5">
+      <img src="assets/images/modalicon4.png" alt="" style="max-width: 86px; display: block; margin: auto;">
+      <br><br>
+       <p style="text-indent: 25px;">
+         Sizin ve diğer kullanıcıların oluşturacağı testler türüne ve katagorisine göre
+         ayrılarak soru havuzlarına dahil edilir. Böylece bir test hazırlarken daha önce
+         sizinle aynı konuda test hazırlamış kullanıcıların sorularından faydalanabilirsiniz.
+         Bu sayede geniş bir yelpazede soru havuzuna sahip olurken hem enerjiden hem de
+         zamandan tasarruf edersiniz.
+       </p>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+         KAPAT
+       </button>
+     </div>
+   </div>
+ </div>
+ </div>
+
+<!--servisler 5-->
+ <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="exampleModalLabel5" >
+              Sertifika
+            </h5>
+            <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5">
+            <img src="assets/images/modalicon5.png" alt="" style="max-width: 86px; display: block; margin: auto;">
+            <br><br>
+            <p style="text-indent: 25px;">
+              Katılımcılarına sertifika vermek isteyen kurum ve kuruluşlar, hazırladıkları testlere baraj puanı
+              belirleyerek
+              bu puanın üzerine çıkan katılımcılar için özel katılımcı sertifikası oluşturabilir. Bu
+              sertifikalar
+              QR kod ile Soru Havuzu uygulamasından teyit edilebilir. Bu, katılımcıların yetkinliğe sahip
+              oldukları bir
+              konuda Belgelendirilmesini sağlarken kurum ve kuruluşların da katılımcı nezdinde güvenirliğini
+              arttırır.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              KAPAT
+            </button>
+          </div>
+        </div>
+      </div>
+ </div>
+
+<!--servisler 6-->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="exampleModalLabel6" >
+        Analiz Raporu
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/modalicon6.png" alt="" style="max-width: 86px; display: block; margin: auto;">
+      <br><br>
+      <p style="text-indent: 25px; ">
+        Utgulanan testte yanlış ve doğru cevaplanan soruların yüzdesi hem kişi bazında hem katılımcı
+        sayısı bazında
+        analiz raporunda yer alır. Sorular testten bağımsız olarak tek tek değerlendirilerek de analiz
+        raporuna dahil edilir.
+        Bu hangi sorularda daha çok zorlanıldığını ya da grubun ve kişinin eksikliklerini anlamayı
+        kolaylaştırır.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--paketler modal 1-->
+<div class="modal fade" id="modalpaket1" tabindex="-1" aria-labelledby="modalpaket1"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="modalpaket1" >
+        Ücretsiz Paket
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"  > </button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/paket1-removebg-preview.png" alt="" style="max-width: 95px; display: block; margin: auto;">
+      <br><br>
+      <p>
+        • Ücretsiz paket kapsamında aylık 3 sınav oluşturma hakkı bulunur. 
+        Ayrıca bu sınırı aşmak isteyenler 5 TL ücret ödeyerek +1 sınav hakkı alabilirler.
+        <br>
+        • Oluşturulan sınavlara 15 soru ekleme hakkı bulunur. 
+        Ekstra soru eklemek için 1 TL ücret ödemek yeterlidir. 
+        <br>
+        • Oluşturulan sınavlar 15 katılımcıya gönderilebilir. Katılımcı sayısını 
+        arttırabilmek için 1 TL karşılığında +5 katılımcı hakkı kazanılır.
+        <br>
+        • Sınav takibi sayfasında, sınav sayfalarında Soru Havuzu
+        ve diğer markaların reklamları yer alacaktır.
+        <br>
+        • Raporları maile gönderme seçeneği yoktur.
+        <br>
+        • Oluşturulan sınav soruları soru havuzunda toplanacaktır.
+        <br> 
+        • Ücretsiz kullanılacaktır.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--paketler modal 2-->
+<div class="modal fade" id="modalpaket2" tabindex="-1" aria-labelledby="modalpaket2"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="modalpaket2" >
+        VIP Paket
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close" ></button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/paket2-removebg-preview.png" alt="" style="max-width: 95px; display: block; margin: auto;">
+      <br><br>
+      <p>
+       • VIP pakette aylık 30 sınav oluşturma hakkı bulunur. Bu sınırı aşmak isteyen kullanıcılar 
+         1 TL ücret ödeyerek +1 sınav hakkı alabilirler. 
+         <br>
+        • Oluşturulan sınavlara 50 soru ekleme hakkı bulunur. Eklenecek ekstra soru için 1 TL ücret ödemek yeterlidir.
+        <br>
+        • Oluşturulan sınavlar 50 katılımcıya gönderilebilir. Katılımcı sayısını 
+        arttırabilmek için 1 TL karşılığında +10 katılımcı hakkı kazanılır. 
+        <br>
+        • Ayrıca eklenen sorular soru havuzuna dahil edilecektir ve soru havuzunda yer alan sorulardan kullanabilme hakkı bulunur.
+        <br>
+        • Reklamsız olacaktır.
+        <br>
+        • Marka rengi ve marka logosu ekleme hakkı ve raporları maile gönderme seçeneği bulunur. 
+        <br>
+        • Bu paket aylık 100 TL ya da senelik 1000 TL karşılığında kullanılabilir.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--paketler modal 3-->
+<div class="modal fade" id="modalpaket3" tabindex="-1" aria-labelledby="modalpaket3"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="modalpaket3" >
+        VIP Plus Paket
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close" ></button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/paket3-removebg-preview.png" alt=""  style="max-width: 95px; display: block; margin: auto;">
+      <br><br>
+      <p>
+        • VIP Plus Paketinde aylık 40 sınav oluşturma hakkı bulunur. 1 TL ücret ödeyerek +1 sınav hakkı alınabilir.
+        <br> 
+        • Oluşturulan sınavlara 100 soru ekleme hakkı bulunur. Eklenecek ekstra soru için 1 TL ücret ödemek gerekir.
+        <br> 
+        • Oluşturulan sınavlar 80 katılımcıya gönderilebilir. Katılımcı sayısını 
+        arttırabilmek için 1 TL karşılığında +10 katılımcı hakkı kazanılır.
+        <br>
+        • Bu pakette soru havuzunda yer alan sorulardan kullanabilme hakkı, kitapçık yapabilme özelliği, 
+        marka rengi ve marka logosu ekleme hakkı ve raporları maile gönderme seçeneği bulunur.
+        <br>
+        • Eklenen sorular soru havuzuna dahil edilmeyecektir ve reklamsız olacaktır. 
+        • VIP Plus paketi aylık 150 TL ya da senelik 1500 TL karşılığında kullanılabilir.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--paketler modal 4-->
+<div class="modal fade" id="modalpaket4" tabindex="-1" aria-labelledby="modalpaket4"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-5" id="modalpaket4" >
+        Kurumsal Paket
+      </h5>
+      <button id="buton" type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close" ></button>
+    </div>
+    <div class="modal-body px-5">
+      <img src="assets/images/paket4-removebg-preview.png" alt=""  style="max-width: 95px; display: block; margin: auto;">
+      <br><br>
+      <p>
+        • Kurumsal Pakette sınırsız sınav hakkı ve Sınırsır katılımcı ekleme hakkı bulunur.
+        <br> 
+        • Oluşturulan sınavlara 500 soru ekleme hakkı bulınur.Eklenecek ekstra soru için 1 TL ücret ödemek gerekir.
+        <br> 
+        • Kullanıcıya e-imzalı sertifika oluşturma hakkı, soru havuzundaki sorulardan kullanabilme hakkı, 
+        marka rengi ve marka logosu ekleme hakkı, raporları maile gönderme seçeneği, çoklu admin yetkisi ve admin ekleme hakkı 
+        verilir.
+        <br>
+        • Eklenen soruların soru havuzuna dahil edilmez ve reklam içermez.
+         <br>
+        • Kurumsal paket aylık 500 TL ya da senelik 5500 TL karşılığında satın alınabilir.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        KAPAT
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<!--modal end-->
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <h1 style="font-size: medium">Soru Havuzu</h1>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Serach Start ***** -->
+
+              <!-- ***** Serach Start ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Anasayfa</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#services">Servisler</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#courses">Kategoriler</a>
+                </li>
+                <li class="scroll-to-section"><a href="#team">Ekibimiz</a></li>
+                <li class="scroll-to-section">
+                  <a href="#events">Paketler</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#contact">Bize Ulaşın</a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="main-banner" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="owl-carousel owl-banner">
+              <div class="item item-1">
+                <div class="header-text">
+                  <h2>Kendi Sınavlarını Hazırla</h2>
+                  <p>
+                    Kendi özgün sorularınızla dilediğiniz gibi sınavlarınızı
+                    oluşturabilir bu sınavları hedef kitlenize rahatça
+                    uygulayabilirsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                        
+                        Kayıt Ol</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-4">
+                <div class="header-text">
+                  <h2>Yarışmalar Düzenle</h2>
+                  <p>
+                    Bir çok katılımcı tarafından eş zamanlı olarak görülecek ve
+                    cevaplanacak sorularla yarışmalar düzenleyebilirsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href=#
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                        Kayıt Ol </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-2">
+                <div class="header-text">
+                  <h2>Kolayca Mülakat Yap</h2>
+                  <p>
+                    Zamanın değerli olduğu bu çağda mülakatlarınızı kolayca ve
+                    hızlıca hazırlayıp yapabilirsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                      Kayıt Ol</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-5">
+                <div class="header-text">
+                  <h2>Kendi Anketlerini Oluştur</h2>
+                  <p>
+                    Bir topluluğun belli konulardaki duygu ve düşüncelerini 
+                    öğrenmk için ankaetler düzenleyebilrsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                      Kayıt Ol</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-6">
+                <div class="header-text">
+                  <h2>Havuzdan Sorular Seç</h2>
+                  <p>
+                    Meslektaşlarınız ya da seçtiğiniz katagoride uzman kişilerce
+                    hazırlanıp havuza dahil edilen sorulardan
+                    yararlanabilirsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                      Kayıt Ol</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-3">
+                <div class="header-text">
+                  <h2>Analiz Raporlarını Gör</h2>
+                  <p>
+                    Analiz raporları sayesinde eksiklikleri belirleyerek onlara
+                    yoğunlaşabilirsiniz.
+                  </p>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#Modal6">
+                      Kayıt Ol</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/soru.png" alt="online degrees" />
+              </div>
+              <div class="main-content">
+                <h4>Soru Oluştur</h4>
+                <p>
+                  Kendi istediğiniz tarzda ve dilediğiniz
+                  katagoride sorular oluşturabilirsiniz.
+                  <br>
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Detay</a>
+                </div>
+    
+      
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/sınav.png" alt="short courses" />
+              </div>
+              <div class="main-content">
+                <h4>Sınavlar</h4>
+                <p>
+                  Kendi hazırladınız veya havuzdan seçtiğiniz testlerle
+                  sınavlar yapabilirsiniz.
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Detay</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/yarış.png" alt="web experts" />
+              </div>
+              <div class="main-content">
+                <h4>Yarışmalar</h4>
+                <p>
+                  Çok sayıda katılımcı ile gerçekleştirebileceğiniz yarışmalar hazırlayabilirsiniz.
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">Detay</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/service-01.png" alt="online degrees" />
+              </div>
+              <div class="main-content">
+                <h4>Soru Havuzu</h4>
+                <p>
+                  Kullanıcıların oluşturacağı testler türüne ve katagorisine göre
+                  ayrılarak soru havuzları oluşturulur.
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4">Detay</a>
+                </div>
+    
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/service-02.png" alt="short courses" />
+              </div>
+              <div class="main-content">
+                <h4>Sertifika</h4>
+                <p>
+                  Firma ve kurumlarca hazırlanan özel katılımcı sertifikasına sahip olabilirsniz.
+                  <br>
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5">Detay</a>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="assets/images/analiz.png" alt="web experts" />
+              </div>
+              <div class="main-content">
+                <h4>Analiz Raporu</h4>
+                <p>
+                  Uyguladığınız testlerin sonuçlarını detaylı olarak görebilirsiniz.
+                  <br>
+                </p>
+                <div class="main-button">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6">Detay</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-1">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Uygulamadan kimler faydalanabilir?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                 •Arkadaşlarıyla eğlenceli vakit geçirmek isteyen kullanıcılar.
+                 <br>
+                 •İnsan kaynakları ihtiyacı olan olan firmalar ve kurumlar.
+                 <br>
+                 •Online olarak sınav yapan kuruluslar.
+                 <br>
+                 •Müşteri deneyimini kontrol etmek isteyen kurumlar.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Sınav/Anket/Mülakat/Yarışma süreleri ne kadar?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Süre ve zaman tamamen sınav/anket/mülakat/yarışma
+                    hazırlayanın insiyatifindedir.
+                      <br>
+                        •Belirlediği bir gün ya da tarih aralığında teste giriş
+                        saatini katılımcıya bırakıp test süresini
+                        sınırlayabilir.
+                      <br>
+                        •Belirlediği bir gün ya da tarih aralığında teste giriş
+                        saatini ve test süresini katılımcıya bırakabilir.
+                      <br>
+                        •Test süresini ve saatini kısıtlayabilir.
+                      <br>
+                        •Soru süresini kısıtlayarak her katılımcıya aynı anda
+                        aynı sorunun iletilmesini sağlayabilir.
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Nasıl sertifika alabilirim?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Uygulamayı kullanan firma ve kurumlar sınavlara baraj puan belirleyerek başarılı olan katılımcılar
+                     için dijital sertifika oluşturabilme yetkisine sahip olacaklar.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Bana en uygun paket hangisi?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                   Paket içeriklerimiz hakkında detaylı bilgi sayfamızda bulunmaktadır. 
+                   Paketleri oradan inceleyerek kendinize uygun paketi seçebilirsiniz. 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-5 align-self-center">
+            <div class="section-heading">
+              <h6>Hakkımızda</h6>
+              <br><br>
+              <h3>Neden böyle bir uygulama geliştirdik?</h3>
+              <p>
+               Kullanıcıya böylesine geniş bir yelpazede içerik ve 
+               yetkinlik sunan benzeri bir uygulama eksikliğinden 
+               ve böyle bir uygulamaya duyulan ihtiyaçtan dolayı bu projeyi geliştirdik. 
+              </p>
+              <div class="main-button">
+                <a href="#">Daha Fazlası</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h6>KATEGORiLER</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row event_box">
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <a href="#"><img src="assets/images/course-01.jpg" alt="" /></a>
+              
+               
+              </div>
+              <div class="down-content">
+                <h4>İş Hayatı</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <a href="#"><img src="assets/images/egitim.jpg" alt="" /></a>
+              
+              </div>
+              <div class="down-content">
+                <h4>Eğitim-Öğretim</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <a href="#"><img src="assets/images/course-03.jpg" alt="" /></a>
+             
+              </div>
+              <div class="down-content">
+                <h4>Kişisel Gelişim</h4>
+              </div>
+            </div>
+          </div>
+          
+       
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="section fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2
+                      class="timer count-title count-number"
+                      data-to="3000"
+                      data-speed="1000"
+                    ></h2>
+                    <p class="count-text">Kullanıcı</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2
+                      class="timer count-title count-number"
+                      data-to="2500"
+                      data-speed="1000"
+                    ></h2>
+                    <p class="count-text">Memnuniyet</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2
+                      class="timer count-title count-number"
+                      data-to="50"
+                      data-speed="1000"
+                    ></h2>
+                    <p class="count-text">Katagori</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter end">
+                    <h2
+                      class="timer count-title count-number"
+                      data-to="10000"
+                      data-speed="1000"
+                    ></h2>
+                    <p class="count-text">Sorular</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 text-center">
+      <div class="section-heading" style="padding-top:200px;">
+        <h6>EKİBİMİZ</h6>
+        
+      </div>
+    </div>
+
+    <div class="team section" id="team">
+      <div class="container">
+        <div class="row"    style="justify-content: center;" >
+          <div class="col-lg-3 col-md-6">
+            <div class="team-member">
+              <div class="main-content">
+                <img src="assets/images/volkan.jpg" alt="" />
+                <span class="category">Full Stack Developer</span>
+                <h4>Volkan Şatır</h4>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="team-member">
+              <div class="main-content">
+                <img src="assets/images/tahsin.jpg" alt="" />
+                <span class="category">Full Stack Developer</span>
+                <h4>Tahsin Kutlu</h4>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="team-member">
+              <div class="main-content">
+                <img src="assets/images/öznur.jpg" alt="" />
+                <span class="category">Frontend Developer</span>
+                <h4>Öznur Şatır</h4>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="owl-carousel owl-testimonials">
+              <div class="item">
+                <p>
+                  "Bu uygulama, mülakat hazırlığımı büyük ölçüde kolaylaştırdı. 
+                  Farklı iş pozisyonlarına yönelik soruların yanı sıra genel mülakat 
+                  tekniklerini de içeriyor. Soru bankası oldukça geniş ve zorluk seviyesi değişkenlik gösteriyor."
+                </p>
+                <div class="author">
+                  <img src="assets/images/user.png" alt="" />
+                  <span class="category"></span>
+                  <h4>Ali Arslan</h4>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  "Uygulama, şirketimiz için özel yarışmalar düzenlememize 
+                  yardımcı oldu. Çok sayıda katılımcıyı yönetmek ve sonuçları 
+                  takip etmek kolay oldu. Etkileşimli ve heyecan verici bir deneyim sunuyor."
+                </p>
+                <div class="author">
+                  <img src="assets/images/user.png" alt="" />
+                  <span class="category"></span>
+                  <h4>Hasan Aydın</h4>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  "Öğrencilerime sınav hazırlamak için bu uygulamayı 
+                  kullanıyorum ve sonuçlardan çok memnunum. Soruları ve 
+                  puanlamayı kolayca ayarlayabiliyorum. Ayrıca otomatik 
+                  değerlendirme özelliği zamanımı büyük ölçüde tasarruf etmeme yardımcı oluyor."
+                </p>
+                <div class="author">
+                  <img src="assets/images/user.png" alt="" />
+                  <span class="category"></span>
+                  <h4>Sema Çelik</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <div class="section-heading">
+              <h6>GÖRÜŞLER</h6>
+              <h2>Bizim Hakkımızda Ne Diyorlar?</h2>
+              <p>
+                Bu soru uygulamasının tasarımı gerçekten hoşuma gitti. 
+                Görsel olarak çekici ve kullanımı kolay. İçerik de sürekli güncelleniyor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section events" id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h6>PAKETLER</h6>
+              
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/paket1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                        
+                          <button 
+                          style="border: none; background: none; alt: Detay;" 
+                          type="button"  
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalpaket1"  > 
+                            <span class="category">Ücretsiz Paket </span></a>
+                         </button> 
+                  
+                      
+                     
+                    </li>
+                    <li>
+                      <span>Aylık Haklar </span>
+                      <h6>3 Sınav 15 Katılımcı</h6>
+                    </li>
+                    <li>
+                      <span>Aylık Ücret</span>
+                      <h6>0TL</h6>
+                    </li>
+                    <li>
+                      <span>Yıllık Ücret</span>
+                      <h6>0TL</h6>
+                    </li>
+                  </ul>
+                  
+                  <a href="#"
+                  data-formtype="free"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#Modal6"><i class="fa fa-angle-right"></i></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/paket2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                        
+                          <button 
+                          style="border: none; background: none;" 
+                          type="button" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalpaket2" > 
+                            <span class="category">VIP Paket </span></a>
+                         </button> 
+                  
+                      
+                     
+                    </li>
+                    <li>
+                      <span>Aylık Haklar </span>
+                      <h6>30 Sınav 50 Katılımcı</h6>
+                    </li>
+                    <li>
+                      <span>Aylık Ücret</span>
+                      <h6>100TL</h6>
+                    </li>
+                    <li>
+                      <span>Yıllık Ücret</span>
+                      <h6>1000TL</h6>
+                    </li>
+                  </ul>
+                  
+                  <a href="#"
+                  data-formtype="vip"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#Modal6"><i class="fa fa-angle-right"></i></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/paket3.jpg" alt="" >
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <button 
+                      style="border: none; background: none;" 
+                      type="button"  
+                      data-bs-toggle="modal" 
+                      data-bs-target="#modalpaket3" > 
+                      <span class="category">VIP Plus Paket</span>
+                      </button>
+                    </li>
+                    <li>
+                      <span>Aylık Haklar</span>
+                      <h6>40 Sınv 80 Katılımcı</h6>
+                    </li>
+                    <li>
+                      <span>Aylık Ücret</span>
+                      <h6>150TL</h6>
+                    </li>
+                    <li>
+                      <span>Yıllık Ücret</span>
+                      <h6>1500TL</h6>
+                    </li>
+                  </ul>
+                  <a href="#"
+                  data-formtype="vipplus"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#Modal6"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/paket4.jpeg" alt=""  >
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <button 
+                      style="border: none; background: none;" 
+                      type="button"  
+                      data-bs-toggle="modal" 
+                      data-bs-target="#modalpaket4" > 
+                      <span class="category">Kurumsal Paket</span>
+                      </button>
+                    </li>
+                    <li>
+                      <span>Aylık Haklar</span>
+                      <h6>Sınırsız Sınav ve Katılımcı</h6>
+                    </li>
+                    <li>
+                      <span>Aylık Ücret</span>
+                      <h6>500TL</h6>
+                    </li>
+                    <li>
+                      <span>Yıllık Ücret</span>
+                      <h6>5000TL</h6>
+                    </li>
+                  </ul>
+                  <a href="#"
+                  data-formtype="commercial"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#Modal6"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-us section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="section-heading">
+              <h6>Bize Ulaşın</h6>
+              <h2>İstediğiniz Zaman Bizimle Iletişime Geçmekten Çekinmeyin</h2>
+              <p>
+               Soru Havuzu uygulamasına gösterdiğiniz ilgiden dolayı teşekkür ederiz.
+               Herhangi bir sorunuz, sorununuz ya da öneriniz olduğunda bizimle buradan
+               iletişime geçebilirsiniz.
+              </p>
+              
+              <div class="special-offer"  >
+              
+                <div class="container-sm">
+                  <div class="row">
+                   <div class="col-sm-3"><span class="offer" ><em>50%</em><br />İNDİRİM</span></div>
+                    <div class="col-sm-7"><h6>Son Tarih: <em>1 Ocak 2024</em></h6>
+                <h4>Özel Teklif <em>50%</em> İNDİRİM!</h4></div>
+                    <div class="col-sm-2" style="display: flex;"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-content">
+              <form id="contact-form" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input
+                        type="name"
+                        name="name"
+                        id="name"
+                        placeholder="Adınız..."
+                        autocomplete="on"
+                        required
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        pattern="[^ @]*@[^ @]*"
+                        placeholder="E-mail..."
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Mesajınız..."
+                      ></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button
+                        type="submit"
+                        id="form-submit"
+                        class="orange-button"
+                      >
+                        Şimdi Mesaj Gönder
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>
+            VOLTAH SOFTWARE
+        
+            © 2023  <a href="#" rel="nofollow" target="_blank">Soru Havuzu</a> Türkiye. Tüm hakları saklıdır.
+            &nbsp;&nbsp;&nbsp; 
+           
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
